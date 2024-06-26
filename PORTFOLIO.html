@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        header nav ul li {
+            margin: 0 15px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        section {
+            padding: 50px 20px;
+        }
+        
+        #home {
+            text-align: center;
+            background: url('https://cdn.pixabay.com/photo/2021/07/21/12/02/briefcase-6482909_1280.jpg') no-repeat center center/cover;
+            color:white;
+        }
+        
+        .home-content {
+            max-width: 600px;
+            margin: auto;
+        }
+        
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        
+        #about, #projects, #contact {
+            background-color: #f3f3f3;
+            padding: 20px;
+        }
+        
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .project-item {
+            background: white;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(50% - 40px);
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        form label {
+            margin: 10px 0 5px;
+        }
+        
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        form button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Simhadri Leena Spandana, a web developer with a passion for creating amazing web experiences.
+                My name is Leena, and I am currently a web developer specializing in Python, with ongoing learning through Next Wave. I am a third-year Computer Science student focusing on Artificial Intelligence and Machine Learning. Recently, I completed a Machine Learning Internship with Bharat Internship, where I gained valuable experience in data analysis and model development. Additionally, I have a deep passion for cultural activities and am a classical dancer specializing in Kuchipudi, which has greatly contributed to my discipline and creativi
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Leena, and I am a web developer specializing in Python, currently enhancing my skills through Next Wave. As a third-year Computer Science student focusing on Artificial Intelligence and Machine Learning, I am passionate about leveraging technology to solve real-world problems.I recently completed a Machine Learning Internship with Bharat Internship, gaining hands-on experience in data analysis and model development. Additionally, I have interned with Prodigy, where I worked on various web development projects, further honing my skills.Beyond my technical pursuits, I am a classical Kuchipudi dancer, which has instilled in me discipline, creativity, and perseverance. Thank you for visiting my portfolio!</p>
+        <h3>Education</h3>
+        <ul>
+            <li>B-Tech  in CSE(AIML) - VKR VNB & AGK college (JNTUK)</li>
+            <li>Higher secondary - Narayana college</li>
+            <li> secondary (10th)- Narayana School</li>
+
+        </ul>
+        <h3>Professional Experience</h3>
+        <ul>
+            <li><h1>Bharat interns</h1><br>
+            <p>may-10-2024 to june-10-2024</p>
+        <p>Developed skills in data analysis and model development through practical applications of machine learning algorithms.</p>
+    <a href="https://www.linkedin.com/posts/leena-spandana-simhadri-8a6a59273_bharat-intern-activity-7211427310288130049-NLY3?utm_source=share&utm_medium=member_desktop">certificate</a></li>
+            <li><h1>web development at Prodigy</h1>
+            june-9-2024 to july-9-2024</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Build Your Own Responsive Website
+                </p>
+                <a href="https://github.com/simhadrileenaspandana/PRODIGY_WD_1/blob/main/responsive%20website.html">github link</a>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; simhadri leena spandana. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
